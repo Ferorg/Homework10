@@ -49,15 +49,7 @@ public class RobotCock implements Robot {
 
     @Override
     public String toString() {
-        return "RobotCock{" +
-                "model='" + model + '\'' +
-                ", powerConsumption=" + powerConsumption +
-                ", powerSupplyModel='" + powerSupplyModel + '\'' +
-                ", manufacturerCountry='" + manufacturerCountry + '\'' +
-                ", agregatDlyaPrigotovleniya='" + agregatDlyaPrigotovleniya + '\'' +
-                ", material='" + material + '\'' +
-                ", isSwitch=" + isSwitch +
-                '}';
+        return "RobotCock{" + "model='" + model + '\'' + ", powerConsumption=" + powerConsumption + ", powerSupplyModel='" + powerSupplyModel + '\'' + ", manufacturerCountry='" + manufacturerCountry + '\'' + ", agregatDlyaPrigotovleniya='" + agregatDlyaPrigotovleniya + '\'' + ", material='" + material + '\'' + ", isSwitch=" + isSwitch + '}';
     }
 
     @Override

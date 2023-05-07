@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        Robot robot1=new RobotCock();
-        Robot robot2=new RobotBuildar();
-        Robot robot3=new RobotSapper();
-        boolean flag=true;
-        int choice=0;
+        Scanner in = new Scanner(System.in);
+        Robot robot1 = new RobotCock();
+        Robot robot2 = new RobotBuildar();
+        Robot robot3 = new RobotSapper();
+        boolean flag = true;
+        int choice = 0;
         System.out.println("Добро пожаловать на выставку роботов");
-        do{
-        System.out.println("Выберите какую выставку хотите посетить:");
-        System.out.println("1) Общая выставка \n2)Выставка инженерных роботов \n3)Выставка робота сапера \n4)Выход");
-        choice=in.nextInt();
-            switch (choice){
+        do {
+            System.out.println("Выберите какую выставку хотите посетить:");
+            System.out.println("1) Общая выставка \n2)Выставка инженерных роботов \n3)Выставка робота сапера \n4)Выход");
+            choice = in.nextInt();
+            switch (choice) {
                 case 1:
                     System.out.println("Вы выбрали первую выставку. 1 экспонат это робот повар");
                     System.out.println(robot1.toString());
@@ -71,14 +71,14 @@ public class Main {
                     robot3.uniquePossibility();
                     break;
                 case 4:
-                    flag=false;
+                    flag = false;
                     break;
                 default:
                     System.out.println("выберите другой номер");
                     break;
             }
 
-    }while (flag);
+        } while (flag);
     }
 
 }

@@ -1,6 +1,6 @@
 package by.pvt.lessons10;
 
-public class RobotSapper implements Robot,RobotEngineer{
+public class RobotSapper implements Robot, RobotEngineer {
 
     private String model;
     private int powerConsumption;
@@ -14,7 +14,7 @@ public class RobotSapper implements Robot,RobotEngineer{
         model = "Минер 1";
         powerConsumption = 100;
         manufacturerCountry = "Китай";
-        deminingAgent= "пассатижи";
+        deminingAgent = "пассатижи";
         material = "сталь";
         isSwitch = false;
 
@@ -30,10 +30,11 @@ public class RobotSapper implements Robot,RobotEngineer{
         System.out.println("Починка завершена.Робот готов к работе");
         powerOnRobot();
     }
+
     public void say() {
-        if(isSwitch){
-        System.out.println("робот сапер рассказывает свои действия по разминированию");
-    }else{
+        if (isSwitch) {
+            System.out.println("робот сапер рассказывает свои действия по разминированию");
+        } else {
             System.out.println("чтобы робот говорил необходимо его включить!");
         }
     }
@@ -41,7 +42,7 @@ public class RobotSapper implements Robot,RobotEngineer{
     @Override
     public void reAgregat(String agregat) {
         if (!isSwitch) {
-            deminingAgent= agregat;
+            deminingAgent = agregat;
             System.out.println("вы заменяете агрегат для разминирования");
         } else {
             System.out.println("чтобы заменить агрегат выключите робота");
@@ -51,14 +52,14 @@ public class RobotSapper implements Robot,RobotEngineer{
 
     @Override
     public void powerOnRobot() {
-        isSwitch=true;
+        isSwitch = true;
         System.out.println("Робот строитель включен");
 
     }
 
     @Override
     public void powerOffRobot() {
-        isSwitch=false;
+        isSwitch = false;
         System.out.println("Робот строитель выключен");
 
 

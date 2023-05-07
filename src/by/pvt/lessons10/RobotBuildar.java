@@ -1,6 +1,6 @@
 package by.pvt.lessons10;
 
-public class RobotBuildar implements Robot,RobotEngineer {
+public class RobotBuildar implements Robot, RobotEngineer {
     private String model;
     private int powerConsumption;
     private String manufacturerCountry;
@@ -42,18 +42,19 @@ public class RobotBuildar implements Robot,RobotEngineer {
 
 
     public void powerOnRobot() {
-        isSwitch=true;
+        isSwitch = true;
         System.out.println("Робот строитель включен");
 
     }
 
 
     public void powerOffRobot() {
-        isSwitch=false;
+        isSwitch = false;
         System.out.println("Робот строитель выключен");
 
 
     }
+
     @Override
     public void uniquePossibility() {
         if (isSwitch) {
@@ -66,9 +67,9 @@ public class RobotBuildar implements Robot,RobotEngineer {
 
     @Override
     public void say() {
-        if(isSwitch){
-        System.out.println("робот строитель рассказывает что строит.");
-        }else{
+        if (isSwitch) {
+            System.out.println("робот строитель рассказывает что строит.");
+        } else {
             System.out.println("чтобы робот говорил необходимо его включить!");
         }
     }
